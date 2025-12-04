@@ -1,4 +1,6 @@
-﻿namespace RPG_Game
+﻿using System.Security.Authentication;
+
+namespace RPG_Game
 {
     public interface IEquippable
     {
@@ -6,13 +8,6 @@
 
         void Equip();
         void Unequip();
-    }
-    public abstract class Character
-    {
-        private string _name;
-        private int _health;
-        private int _maxHealth;
-        private int _strength;
     }
     internal class Program
     {
