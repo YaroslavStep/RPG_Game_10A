@@ -10,18 +10,36 @@ namespace RPG_Game
         void Unequip();
     }
 
-    public abstract class Item
+    public abstract class Enemy : Character
     {
-        public string Name { get; protected set; }
-        public string Description { get; protected set; }
+        private int _experienceReward;
+        private List<Item> _loot;
 
-        protected Item(string name, string description)
+        public int ExperienceReward
         {
-            Name = name;
-            Description = description;
+            get => _experienceReward;
+            set => _experienceReward = value;
+        }
+        protected Enemy(string name, int health, int strength, int experienceReward) : base(name, health, strength)
+        {
+            _experienceReward = experienceReward;
+            _loot = new List<Item>();
         }
 
-        public abstract void Use(Player player);
+        protected void AddLoot(Item item)
+        {
+            _loot.Add(item);
+        }
+
+        public List<Item> GetLoot()
+        {
+            return new List<Item>(_loot);
+        }
+    }
+
+    public class Player
+    {
+
     }
 
     internal class Program
