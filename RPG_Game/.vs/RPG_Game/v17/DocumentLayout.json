@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Git\\RPG_Game_10A\\RPG_Game\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{438F4031-F75A-4618-B4FC-6F8313345514}|RPG_Game\\RPG_Game.csproj|c:\\git\\rpg_game_10a\\rpg_game\\rpg_game\\iequippable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438F4031-F75A-4618-B4FC-6F8313345514}|RPG_Game\\RPG_Game.csproj|solutionrelative:rpg_game\\iequippable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{438F4031-F75A-4618-B4FC-6F8313345514}|RPG_Game\\RPG_Game.csproj|c:\\git\\rpg_game_10a\\rpg_game\\rpg_game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{438F4031-F75A-4618-B4FC-6F8313345514}|RPG_Game\\RPG_Game.csproj|solutionrelative:rpg_game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "IEquippable.cs",
+              "DocumentMoniker": "C:\\Git\\RPG_Game_10A\\RPG_Game\\RPG_Game\\IEquippable.cs",
+              "RelativeDocumentMoniker": "RPG_Game\\IEquippable.cs",
+              "ToolTip": "C:\\Git\\RPG_Game_10A\\RPG_Game\\RPG_Game\\IEquippable.cs",
+              "RelativeToolTip": "RPG_Game\\IEquippable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:02:29.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Git\\RPG_Game_10A\\RPG_Game\\RPG_Game\\Character.cs",
               "RelativeDocumentMoniker": "RPG_Game\\Character.cs",
               "ToolTip": "C:\\Git\\RPG_Game_10A\\RPG_Game\\RPG_Game\\Character.cs",
               "RelativeToolTip": "RPG_Game\\Character.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T10:01:38.737Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Git\\RPG_Game_10A\\RPG_Game\\RPG_Game\\Program.cs",
               "RelativeDocumentMoniker": "RPG_Game\\Program.cs",
               "ToolTip": "C:\\Git\\RPG_Game_10A\\RPG_Game\\RPG_Game\\Program.cs",
               "RelativeToolTip": "RPG_Game\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T10:37:59.33Z",
               "EditorCaption": ""
