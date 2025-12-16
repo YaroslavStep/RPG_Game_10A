@@ -2,6 +2,36 @@
 
 namespace RPG_Game
 {
+    public class Weapon : Item, IEquippable
+    {
+        private int _damage;
+
+        public int Damage
+        {
+            get => _damage;
+            protected set => _damage = value;
+        }
+
+        public Weapon(int damage, string name, string description) : base(name, description)
+        {
+            _damage = damage;
+        }
+
+        public void Equip(Player player)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Unequip(Player player)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Use(Player player)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
     public class Player : Character, ISpellCaster
     {
@@ -12,20 +42,7 @@ namespace RPG_Game
         private IEquippable _equippableWeapon;
         private List<Item> _inventory;
 
-        public class Weapon
-        {
-            private int _damage;
-
-            public int Damage
-            {
-                get => _damage;
-                protected set => _damage = value;
-            }
-            public Weapon(int damage)
-            {
-                _damage = damage;
-            }
-        }
+       
 
         public int Mana
         {
@@ -89,6 +106,8 @@ namespace RPG_Game
             throw new NotImplementedException();
         }
     }
+
+
 
     internal class Program
     {
