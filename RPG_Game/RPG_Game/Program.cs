@@ -2,37 +2,12 @@
 
 namespace RPG_Game
 {
-    public class Weapon : Item, IEquippable
+    public class WoodenSword : Weapon
     {
-        private int _damage;
-
-        public int Damage
+        public WoodenSword() : base(20, "Дерев'яний меч", "+5 до атаки")
         {
-            get => _damage;
-            protected set => _damage = value;
-        }
-
-        public Weapon(int damage, string name, string description) : base(name, description)
-        {
-            _damage = damage;
-        }
-
-        public void Equip(Player player)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Unequip(Player player)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Use(Player player)
-        {
-            throw new NotImplementedException();
         }
     }
-
     public class Player : Character, ISpellCaster
     {
         private int _mana;
