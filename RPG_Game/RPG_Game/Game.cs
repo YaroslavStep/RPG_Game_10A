@@ -23,8 +23,6 @@
             string name = Console.ReadLine();
 
             player = new Player(name);
-            player.AddItem(new HealthPotion());
-            player.AddItem(new ManaPotion());
             player.EquipWeapon(new WoodenSword());
 
             Console.WriteLine($"\n🎮 Вітаємо, {name}! Ваша пригода починається...\n");
@@ -36,7 +34,7 @@
 
         private void MainGameLoop()
         {
-            while (player.IsAlive)
+            while (player.isAlive)
             {
                 Console.Clear();
                 player.ShowStats();
@@ -89,7 +87,7 @@
             Console.WriteLine("Натисніть будь-яку клавішу...");
             Console.ReadKey();
 
-            while (player.IsAlive && enemy.IsAlive)
+            while (player.isAlive && enemy.isAlive)
             {
                 Console.Clear();
                 Console.WriteLine($"\n👤 {player.Name}: {player.Health}/{player.MaxHealth} HP | {player.Mana}/{player.MaxMana} Мана");
@@ -137,7 +135,7 @@
                         break;
                 }
 
-                if (playerTurnTaken && enemy.IsAlive)
+                if (playerTurnTaken && enemy.isAlive)
                 {
                     Console.WriteLine();
                     enemy.Attack(player);
@@ -147,7 +145,7 @@
                 Console.ReadKey();
             }
 
-            if (player.IsAlive)
+            if (player.isAlive)
             {
                 battlesWon++;
                 Console.WriteLine($"\n🎉 Перемога! Ви перемогли {enemy.Name}!");
@@ -179,7 +177,7 @@
                 case 1:
                     return new Troll();
                 default:
-                    return new DarkMage();
+                    return new DarkWizard();
             }
         }
 
